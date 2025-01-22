@@ -1,0 +1,44 @@
+.Universal-Button{
+    width: 100px;
+    height: auto;
+    position: relative;
+    color: white;
+    border-radius: 8px;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: transform 0.3s ease-in-out;
+    margin: 8px;
+  }
+  .Universal-Button::before{
+    box-shadow: 4px 4px 4px rgba(58, 58, 58, 0.703);
+    opacity: 0;
+    border-radius: inherit;
+    padding: inherit;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(155, 155, 155, 0.388);
+    transition: opacity 0.5 0.3s ease-in-out;
+  }
+  .Universal-Button:hover::before{
+    opacity: 1;
+  }
+  .Universal-Button:hover{
+    transform: scale(1.05);
+  }
+  .Start{
+    background-color: green;
+    
+}
+.Stop{
+    background-color: red;
+}
+.Pause{
+  background-color: yellow;
+}
